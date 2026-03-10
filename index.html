@@ -92,36 +92,6 @@
     animation: hero-logos-scroll 40s linear infinite;
   }
 
-  /* Palabra "Invisible": relleno de fondo negro y texto a neon */
-  .invisible-word-animate {
-    position: relative;
-    display: inline-block;
-    padding: 0.12em 0.35em;
-    color: #000;
-    font-style: italic;
-    animation: invisible-text-color 1s ease-out forwards;
-  }
-  .invisible-word-animate::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background: #000;
-    z-index: -1;
-    transform: scaleX(0);
-    transform-origin: left center;
-    animation: invisible-fill 1s ease-out forwards;
-  }
-  @keyframes invisible-fill {
-    to { transform: scaleX(1); }
-  }
-  @keyframes invisible-text-color {
-    from { color: #000; }
-    to { color: #CCFF00; }
-  }
-
   /* Carousel: track 400% wide, each slide 25% = 100% visible area */
   #testimonial-track {
     width: 400%;
@@ -273,7 +243,7 @@
     <div class="grid lg:grid-cols-2 gap-20 items-center mb-20">
       <div>
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black uppercase italic mb-4 sm:mb-6 text-black">
-          Stop Being <span class="invisible-word-animate">Invisible</span> To Your Local Market
+          Stop Being <span class="text-brand-neon bg-black px-2 italic">Invisible</span> To Your Local Market
         </h2>
 
         <ul class="space-y-6">
@@ -607,7 +577,7 @@
         <div class="relative bg-white p-8 rounded-2xl border border-black/5 flex-grow shadow-sm group-hover:shadow-md transition overflow-hidden">
           <span class="absolute top-8 right-8 text-black text-4xl font-black opacity-10 pointer-events-none select-none" aria-hidden="true">04</span>
           <div class="relative z-10">
-            <h3 class="text-2xl font-black uppercase italic text-black mb-4">Report Clearly (Monthly)</h3>
+            <h3 class="text-2xl font-black uppercase italic text-black mb-4">Report Clearly</h3>
             <p class="text-gray-600">You'll always know what changed, why it matters, and what we're doing next.</p>
           </div>
         </div>
