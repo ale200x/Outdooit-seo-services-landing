@@ -1147,6 +1147,26 @@
     if (wrap) {
       wrap.addEventListener("mouseenter", stopAuto);
       wrap.addEventListener("mouseleave", startAuto);
+
+      var touchStartX = 0;
+      var touchEndX = 0;
+      var SWIPE_MIN = 50;
+
+      wrap.addEventListener("touchstart", function (e) {
+        touchStartX = e.changedTouches[0].clientX;
+      }, { passive: true });
+
+      wrap.addEventListener("touchend", function (e) {
+        touchEndX = e.changedTouches[0].clientX;
+        var diff = touchStartX - touchEndX;
+        if (diff > SWIPE_MIN) {
+          next();
+          startAuto();
+        } else if (diff < -SWIPE_MIN) {
+          prev();
+          startAuto();
+        }
+      }, { passive: true });
     }
 
     document.addEventListener("keydown", function (e) {
