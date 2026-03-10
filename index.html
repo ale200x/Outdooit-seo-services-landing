@@ -67,14 +67,26 @@
   .faq-item.is-open .faq-icon {
     transform: rotate(180deg);
   }
+
+  /* Carousel: track 400% wide, each slide 25% = 100% visible area */
+  #testimonial-track {
+    width: 400%;
+    min-width: 400%;
+  }
+  #testimonial-track > div {
+    width: 25%;
+    min-width: 25%;
+    flex: 0 0 25%;
+    box-sizing: border-box;
+  }
 </style>
 </head>
 
-<body class="bg-brand-black text-white font-sans antialiased">
+<body class="bg-brand-black text-white font-sans antialiased overflow-x-hidden">
 
 <!-- BEGIN: Navigation -->
-<nav class="sticky top-0 z-50 bg-brand-black/90 backdrop-blur-md border-b border-white/10 px-6 py-3">
-  <div class="max-w-7xl mx-auto flex justify-between items-center gap-4">
+<nav class="sticky top-0 z-50 bg-brand-black/90 backdrop-blur-md border-b border-white/10 px-4 sm:px-6 py-3">
+  <div class="max-w-7xl mx-auto flex justify-between items-center gap-2 sm:gap-4">
     <a href="#" class="flex items-center shrink-0 py-1 -my-1" aria-label="Outdooit home">
       <img src="images/outdooit.webp" alt="Outdooit" class="h-[5rem] w-auto max-w-[5rem] object-contain object-center block" width="80" height="80" fetchpriority="high"/>
     </a>
@@ -97,18 +109,18 @@
 <!-- END: Navigation -->
 
 <!-- BEGIN: Hero Section -->
-<header class="relative overflow-hidden pt-20 pb-32 bg-brand-black bg-gradient-dark">
+<header class="relative overflow-hidden pt-12 sm:pt-16 lg:pt-20 pb-20 sm:pb-24 lg:pb-32 bg-brand-black bg-gradient-dark">
   <img src="images/outdooit-500x500px.webp" alt="" class="absolute right-0 bottom-0 w-96 max-w-[90vw] opacity-[0.08] pointer-events-none select-none object-contain" width="384" height="384" loading="lazy" aria-hidden="true"/>
-  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10">
     <div data-purpose="hero-content">
       <p class="text-brand-neon font-bold tracking-widest uppercase mb-4 text-sm">Local SEO Agency</p>
 
-      <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6 uppercase italic">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight mb-4 sm:mb-6 uppercase italic">
         SEO Near Me in Orange County, CA:
         <span class="text-brand-neon block">Local SEO That Turns Searches Into Calls</span>
       </h1>
 
-      <p class="text-xl text-gray-400 mb-8 max-w-xl">
+      <p class="text-base sm:text-lg lg:text-xl text-gray-400 mb-6 sm:mb-8 max-w-xl">
         We help Orange County businesses improve Google Business Profile visibility, local rankings, and lead flow with a clear weekly plan built around buyer-intent searches.
       </p>
 
@@ -170,11 +182,11 @@
 <!-- END: Hero Section -->
 
 <!-- BEGIN: Pain Points & Benefits -->
-<section class="py-24 px-6 bg-white text-black">
+<section class="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 bg-white text-black overflow-x-hidden">
   <div class="max-w-7xl mx-auto">
     <div class="grid lg:grid-cols-2 gap-20 items-center mb-20">
       <div>
-        <h2 class="text-4xl font-black uppercase italic mb-6 text-black">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black uppercase italic mb-4 sm:mb-6 text-black">
           Stop Being <span class="text-brand-neon bg-black px-2 italic">Invisible</span> To Your Local Market
         </h2>
 
@@ -249,9 +261,9 @@
 <!-- END: Pain Points & Benefits -->
 
 <!-- BEGIN: Services -->
-<section class="py-24 bg-brand-black relative overflow-hidden" id="services">
+<section class="py-12 sm:py-16 lg:py-24 bg-brand-black relative overflow-hidden" id="services">
   <img src="images/outdooit-500x500px.webp" alt="" class="absolute right-0 bottom-0 w-96 max-w-[90vw] opacity-[0.15] pointer-events-none select-none object-contain" width="384" height="384" loading="lazy" aria-hidden="true"/>
-  <div class="max-w-7xl mx-auto px-6 relative z-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
     <div class="text-center mb-16">
       <p class="text-brand-neon font-bold uppercase tracking-widest text-sm mb-4">Our Services</p>
       <h2 class="text-4xl md:text-5xl font-black italic uppercase text-white">
@@ -334,12 +346,12 @@
 <!-- END: Services -->
 
 <!-- BEGIN: Why -->
-<section class="py-24 bg-white text-black" id="why">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-2 gap-16 items-center">
+<section class="py-12 sm:py-16 lg:py-24 bg-white text-black overflow-x-hidden" id="why">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
       <div>
         <p class="text-black font-bold uppercase tracking-widest text-sm mb-4">Why Choose Us</p>
-        <h2 class="text-5xl font-black uppercase italic leading-tight mb-8">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black uppercase italic leading-tight mb-6 lg:mb-8">
           An SEO Agency Near You That <span class="text-brand-neon px-2 bg-black inline-block">Actually Feels Like a Partner</span>
         </h2>
 
@@ -366,20 +378,20 @@
         </div>
       </div>
 
-      <div class="relative" id="testimonial-carousel-section" aria-label="Client testimonials">
-        <div class="relative bg-black text-white py-8 px-10 md:px-14 rounded-3xl shadow-2xl border border-white/10 min-h-[420px]">
-          <button type="button" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center text-brand-neon hover:text-white transition-colors focus:outline-none z-10" id="testimonial-prev" aria-label="Previous testimonial">
-            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      <div class="relative min-w-0 w-full" id="testimonial-carousel-section" aria-label="Client testimonials">
+        <div class="relative bg-black text-white py-6 sm:py-8 px-4 sm:px-6 md:px-10 lg:px-14 rounded-2xl sm:rounded-3xl shadow-2xl border border-white/10 min-h-[320px] sm:min-h-[380px] lg:min-h-[420px]">
+          <button type="button" class="absolute left-1 sm:left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 flex items-center justify-center text-brand-neon hover:text-white transition-colors focus:outline-none z-10" id="testimonial-prev" aria-label="Previous testimonial">
+            <svg class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
           </button>
-          <button type="button" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center text-brand-neon hover:text-white transition-colors focus:outline-none z-10" id="testimonial-next" aria-label="Next testimonial">
-            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+          <button type="button" class="absolute right-1 sm:right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 flex items-center justify-center text-brand-neon hover:text-white transition-colors focus:outline-none z-10" id="testimonial-next" aria-label="Next testimonial">
+            <svg class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
           </button>
-          <div class="overflow-hidden h-[380px] flex items-center" id="testimonial-track-wrap">
-            <div class="flex transition-transform duration-300 ease-out w-full h-full" id="testimonial-track" style="transform: translateX(0%)">
-              <div class="w-full flex-shrink-0 flex items-center justify-center min-h-full" data-testimonial-index="0">
-                <div class="text-center">
-                  <div class="flex items-center justify-center space-x-4 mb-6">
-                    <div class="w-16 h-16 rounded-full bg-brand-neon flex items-center justify-center font-bold text-2xl text-black">JW</div>
+          <div class="overflow-hidden flex items-center w-full h-[300px] sm:h-[340px] lg:h-[380px]" id="testimonial-track-wrap">
+            <div class="flex transition-transform duration-300 ease-out h-full flex-shrink-0" id="testimonial-track" style="transform: translateX(0%)">
+              <div class="flex items-center justify-center min-h-full" data-testimonial-index="0">
+                <div class="text-center px-1">
+                  <div class="flex items-center justify-center space-x-4 mb-4 sm:mb-6">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-brand-neon flex items-center justify-center font-bold text-xl sm:text-2xl text-black">JW</div>
                     <div>
                       <h5 class="font-bold text-xl">John Walters</h5>
                       <p class="text-gray-400 text-sm uppercase font-bold">OC Plumbing Pros</p>
@@ -392,13 +404,13 @@
                     <span class="text-brand-neon px-1 mr-1">★</span>
                     <span class="text-brand-neon px-1 mr-1">★</span>
                   </div>
-                  <p class="text-lg italic text-gray-300 leading-relaxed max-w-xl mx-auto">"Outdooit took us from page 4 to the top of the map pack in Irvine in just 90 days. We had to hire two new techs to handle the call volume."</p>
+                  <p class="text-base sm:text-lg italic text-gray-300 leading-relaxed max-w-xl mx-auto px-1">"Outdooit took us from page 4 to the top of the map pack in Irvine in just 90 days. We had to hire two new techs to handle the call volume."</p>
                 </div>
               </div>
-              <div class="w-full flex-shrink-0 flex items-center justify-center min-h-full" data-testimonial-index="1">
-                <div class="text-center">
-                  <div class="flex items-center justify-center space-x-4 mb-6">
-                    <div class="w-16 h-16 rounded-full bg-brand-neon flex items-center justify-center font-bold text-2xl text-black">JL</div>
+              <div class="flex items-center justify-center min-h-full" data-testimonial-index="1">
+                <div class="text-center px-1">
+                  <div class="flex items-center justify-center space-x-4 mb-4 sm:mb-6">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-brand-neon flex items-center justify-center font-bold text-xl sm:text-2xl text-black">JL</div>
                     <div>
                       <h5 class="font-bold text-xl">J L</h5>
                     </div>
@@ -410,13 +422,13 @@
                     <span class="text-brand-neon px-1 mr-1">★</span>
                     <span class="text-brand-neon px-1 mr-1">★</span>
                   </div>
-                  <p class="text-lg italic text-gray-300 leading-relaxed max-w-xl mx-auto">"The Outdooit team has been very engaged in the entire process and have been responsive to any questions we have. We are glad that they care about our business and that they listen to our input to create something that aligns with our vision."</p>
+                  <p class="text-base sm:text-lg italic text-gray-300 leading-relaxed max-w-xl mx-auto px-1">"The Outdooit team has been very engaged in the entire process and have been responsive to any questions we have. We are glad that they care about our business and that they listen to our input to create something that aligns with our vision."</p>
                 </div>
               </div>
-              <div class="w-full flex-shrink-0 flex items-center justify-center min-h-full" data-testimonial-index="2">
-                <div class="text-center">
-                  <div class="flex items-center justify-center space-x-4 mb-6">
-                    <div class="w-16 h-16 rounded-full bg-brand-neon flex items-center justify-center font-bold text-2xl text-black">SC</div>
+              <div class="flex items-center justify-center min-h-full" data-testimonial-index="2">
+                <div class="text-center px-1">
+                  <div class="flex items-center justify-center space-x-4 mb-4 sm:mb-6">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-brand-neon flex items-center justify-center font-bold text-xl sm:text-2xl text-black">SC</div>
                     <div>
                       <h5 class="font-bold text-xl">Sau Cheng</h5>
                     </div>
@@ -428,13 +440,13 @@
                     <span class="text-brand-neon px-1 mr-1">★</span>
                     <span class="text-brand-neon px-1 mr-1">★</span>
                   </div>
-                  <p class="text-lg italic text-gray-300 leading-relaxed max-w-xl mx-auto">"We wanted a local team that truly understands the Orange County market, and Dennis and Kristine delivered. They helped us with branding, website, and improved our SEO and online marketing. We've already seen more people finding us on Google and reaching out—even from outside our city. They're knowledgeable, easy to talk to, and they actually follow through."</p>
+                  <p class="text-base sm:text-lg italic text-gray-300 leading-relaxed max-w-xl mx-auto px-1">"We wanted a local team that truly understands the Orange County market, and Dennis and Kristine delivered. They helped us with branding, website, and improved our SEO and online marketing. We've already seen more people finding us on Google and reaching out—even from outside our city. They're knowledgeable, easy to talk to, and they actually follow through."</p>
                 </div>
               </div>
-              <div class="w-full flex-shrink-0 flex items-center justify-center min-h-full" data-testimonial-index="3">
-                <div class="text-center">
-                  <div class="flex items-center justify-center space-x-4 mb-6">
-                    <div class="w-16 h-16 rounded-full bg-brand-neon flex items-center justify-center font-bold text-2xl text-black">PP</div>
+              <div class="flex items-center justify-center min-h-full" data-testimonial-index="3">
+                <div class="text-center px-1">
+                  <div class="flex items-center justify-center space-x-4 mb-4 sm:mb-6">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-brand-neon flex items-center justify-center font-bold text-xl sm:text-2xl text-black">PP</div>
                     <div>
                       <h5 class="font-bold text-xl">Paul Papac</h5>
                     </div>
@@ -446,7 +458,7 @@
                     <span class="text-brand-neon px-1 mr-1">★</span>
                     <span class="text-brand-neon px-1 mr-1">★</span>
                   </div>
-                  <p class="text-lg italic text-gray-300 leading-relaxed max-w-xl mx-auto">"I really enjoyed working with this team on our marketing. They are easy to communicate and work with. I have seen a clear improvement in our online presence since partnering with them."</p>
+                  <p class="text-base sm:text-lg italic text-gray-300 leading-relaxed max-w-xl mx-auto px-1">"I really enjoyed working with this team on our marketing. They are easy to communicate and work with. I have seen a clear improvement in our online presence since partnering with them."</p>
                 </div>
               </div>
             </div>
@@ -461,11 +473,11 @@
 <!-- END: Why -->
 
 <!-- BEGIN: Process -->
-<section class="py-24 bg-brand-lightGray text-black" id="process">
-  <div class="max-w-4xl mx-auto px-6">
-    <div class="text-center mb-16">
+<section class="py-12 sm:py-16 lg:py-24 bg-brand-lightGray text-black overflow-x-hidden" id="process">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10 sm:mb-16">
       <p class="text-black font-bold uppercase tracking-widest text-sm mb-4">Our Process</p>
-      <h2 class="text-5xl font-black uppercase italic leading-tight text-black">SEE HOW EASY IT IS TO GET STARTED</h2>
+      <h2 class="text-2xl sm:text-3xl lg:text-5xl font-black uppercase italic leading-tight text-black">SEE HOW EASY IT IS TO GET STARTED</h2>
     </div>
 
     <div class="space-y-12 relative">
@@ -525,9 +537,9 @@
 <!-- END: Process -->
 
 <!-- BEGIN: Fit -->
-<section class="py-24 bg-brand-black border-y border-white/5">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
-    <div class="bg-green-900/10 p-10 rounded-3xl border border-green-500/20">
+<section class="py-12 sm:py-16 lg:py-24 bg-brand-black border-y border-white/5 overflow-x-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 md:gap-12">
+    <div class="bg-green-900/10 p-6 sm:p-10 rounded-2xl sm:rounded-3xl border border-green-500/20">
       <h3 class="text-2xl font-bold mb-8 uppercase italic text-green-400">
         Who We Are a <span class="bg-green-500 text-black px-2">PERFECT FIT</span> for:
       </h3>
@@ -556,7 +568,7 @@
       </ul>
     </div>
 
-    <div class="bg-red-900/10 p-10 rounded-3xl border border-red-500/20">
+    <div class="bg-red-900/10 p-6 sm:p-10 rounded-2xl sm:rounded-3xl border border-red-500/20">
       <h3 class="text-2xl font-bold mb-8 uppercase italic text-red-400">
         Who We are <span class="bg-red-500 text-black px-2">NOT IDEAL</span> for:
       </h3>
@@ -594,9 +606,9 @@
 <!-- END: Fit -->
 
 <!-- BEGIN: FAQ -->
-<section class="py-24 bg-brand-black" id="faq">
-  <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-4xl font-black uppercase italic mb-12 text-center text-white">Frequently Asked Questions</h2>
+<section class="py-12 sm:py-16 lg:py-24 bg-brand-black overflow-x-hidden" id="faq">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black uppercase italic mb-8 sm:mb-12 text-center text-white">Frequently Asked Questions</h2>
 
     <div class="faq-accordion space-y-4">
       <div class="faq-item is-open bg-brand-gray border border-white/5 rounded-2xl overflow-hidden">
@@ -705,19 +717,19 @@
 <!-- END: FAQ -->
 
 <!-- BEGIN: Final CTA -->
-<section class="py-24 px-6 bg-white">
-  <div class="max-w-7xl mx-auto bg-black rounded-[3rem] p-12 md:p-24 text-center text-white overflow-hidden relative shadow-[0_40px_100px_-15px_rgba(0,0,0,0.5)]">
+<section class="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 bg-white overflow-x-hidden">
+  <div class="max-w-7xl mx-auto bg-black rounded-2xl sm:rounded-[3rem] p-8 sm:p-12 md:p-24 text-center text-white overflow-hidden relative shadow-[0_40px_100px_-15px_rgba(0,0,0,0.5)]">
     <div class="absolute top-0 right-0 w-64 h-64 bg-brand-neon/10 blur-3xl rounded-full"></div>
 
-    <h2 class="text-5xl md:text-8xl font-black uppercase italic mb-8 relative z-10 leading-tight">
-      DOMINATE YOUR <br/><span class="text-brand-neon bg-white/10 px-4 italic">LOCAL MARKET</span>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-black uppercase italic mb-6 sm:mb-8 relative z-10 leading-tight">
+      DOMINATE YOUR <br/><span class="text-brand-neon bg-white/10 px-2 sm:px-4 italic">LOCAL MARKET</span>
     </h2>
 
-    <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-medium">
+    <p class="text-base sm:text-lg lg:text-xl text-gray-400 mb-8 sm:mb-12 max-w-2xl mx-auto font-medium">
       Ready to see what is holding your business back? Request your free local SEO audit and get a clearer path to stronger rankings, visibility, and lead flow.
     </p>
 
-    <a class="inline-block bg-brand-neon text-black px-12 py-6 rounded-full font-black text-2xl hover:scale-105 transition transform shadow-2xl neon-glow" href="#audit-form">
+    <a class="inline-block bg-brand-neon text-black px-6 sm:px-12 py-4 sm:py-6 rounded-full font-black text-lg sm:text-2xl hover:scale-105 transition transform shadow-2xl neon-glow" href="#audit-form">
       GET MY LOCAL SEO AUDIT
     </a>
   </div>
@@ -725,8 +737,8 @@
 <!-- END: Final CTA -->
 
 <!-- BEGIN: Footer -->
-<footer class="bg-brand-black pt-24 pb-12 border-t border-white/10">
-  <div class="max-w-7xl mx-auto px-6">
+<footer class="bg-brand-black pt-12 sm:pt-16 lg:pt-24 pb-8 sm:pb-12 border-t border-white/10 overflow-x-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div class="grid md:grid-cols-4 gap-12 mb-16">
       <div class="col-span-1 md:col-span-2">
         <a href="#" class="inline-flex items-center mb-6" aria-label="Outdooit home">
@@ -1073,7 +1085,7 @@
 
     function goTo(index) {
       current = (index + total) % total;
-      track.style.transform = "translateX(-" + current * 100 + "%)";
+      track.style.transform = "translateX(-" + current * 25 + "%)";
       if (dots.length) dots.forEach(function (d, i) {
         d.setAttribute("aria-selected", i === current ? "true" : "false");
         d.classList.toggle("bg-brand-neon", i === current);
