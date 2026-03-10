@@ -68,6 +68,30 @@
     transform: rotate(180deg);
   }
 
+  .hero-logo {
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+  }
+  .hero-logo:hover {
+    opacity: 1;
+  }
+
+  .hero-logos-row {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .hero-logos-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  @keyframes hero-logos-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .hero-logos-track {
+    animation: hero-logos-scroll 40s linear infinite;
+  }
+
   /* Carousel: track 400% wide, each slide 25% = 100% visible area */
   #testimonial-track {
     width: 400%;
@@ -145,17 +169,6 @@
         </a>
 
       </div>
-
-      <div class="mt-12 flex items-center space-x-8 opacity-70">
-        <div class="flex items-center space-x-2">
-          <span class="text-2xl font-bold">G</span>
-          <span class="text-xs font-bold leading-tight">150+ Five-Star<br/>Google Reviews</span>
-        </div>
-        <div class="flex items-center space-x-2">
-          <span class="text-2xl font-bold uppercase italic">Inc.</span>
-          <span class="text-xs font-bold leading-tight">Ranked #1421 on<br/>the INC. 5000</span>
-        </div>
-      </div>
     </div>
 
     <div class="relative hidden lg:block">
@@ -190,6 +203,34 @@
         <p class="text-center text-gray-500 text-[10px] uppercase font-bold tracking-widest mt-6">
           We review your GBP + website and send the top 3 opportunities.
         </p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-12 sm:mt-16 pt-8 border-t border-white/10 relative z-10 lg:col-span-2">
+      <p class="text-xs font-bold uppercase tracking-widest text-gray-500 text-center mb-6">Trusted by</p>
+      <div class="overflow-hidden">
+        <div class="hero-logos-track flex flex-nowrap items-center gap-8 sm:gap-12 w-max">
+          <div class="flex flex-nowrap items-center gap-8 sm:gap-12 shrink-0">
+            <img src="images/Logos/berlitz.webp" alt="Berlitz" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" loading="lazy"/>
+            <img src="images/Logos/bccannabisstore.webp" alt="BC Cannabis Store" class="hero-logo h-10 sm:h-12 w-auto max-w-24 sm:max-w-28 object-contain shrink-0" loading="lazy"/>
+            <img src="images/Logos/contractors%20liability.webp" alt="Contractors Liability" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" loading="lazy"/>
+            <img src="images/Logos/herman%20legal%20group.webp" alt="Herman Legal Group" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" loading="lazy"/>
+            <img src="images/Logos/house%20sigma.webp" alt="House Sigma" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" loading="lazy"/>
+            <img src="images/Logos/modulex.webp" alt="Modulex" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" loading="lazy"/>
+            <img src="images/Logos/handyman.webp" alt="Mr. Handyman" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" loading="lazy"/>
+            <img src="images/Logos/pizzahut.webp" alt="Pizza Hut" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" loading="lazy"/>
+          </div>
+          <div class="flex flex-nowrap items-center gap-8 sm:gap-12 shrink-0" aria-hidden="true">
+            <img src="images/Logos/berlitz.webp" alt="" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0"/>
+            <img src="images/Logos/bccannabisstore.webp" alt="" class="hero-logo h-10 sm:h-12 w-auto max-w-24 sm:max-w-28 object-contain shrink-0"/>
+            <img src="images/Logos/contractors%20liability.webp" alt="" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0"/>
+            <img src="images/Logos/herman%20legal%20group.webp" alt="" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0"/>
+            <img src="images/Logos/house%20sigma.webp" alt="" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0"/>
+            <img src="images/Logos/modulex.webp" alt="" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0"/>
+            <img src="images/Logos/handyman.webp" alt="" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0"/>
+            <img src="images/Logos/pizzahut.webp" alt="" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0"/>
+          </div>
+        </div>
       </div>
     </div>
   </div>
