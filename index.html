@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Outdooit | Local SEO Agency in Orange County</title>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            black: '#000000',
+            neon: '#CCFF00',
+            darkBlue: '#0A0A1F',
+            gray: '#1A1A1A',
+            lightGray: '#F5F5F7',
+          }
+        },
+        fontFamily: {
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 5px rgba(204, 255, 0, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(204, 255, 0, 0.4); }
+  }
+
+  .neon-glow:hover {
+    animation: glow 2s infinite ease-in-out;
+  }
+
+  .bg-gradient-dark {
+    background: radial-gradient(circle at top right, #0F0F2D, #000000 60%);
+  }
+
+  .faq-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  .faq-item.is-open .faq-panel {
+    max-height: 28rem;
+  }
+
+  .faq-icon {
+    transition: transform 0.3s ease;
+  }
+
+  .faq-item.is-open .faq-icon {
+    transform: rotate(180deg);
+  }
+</style>
+</head>
+
+<body class="bg-brand-black text-white font-sans antialiased">
+
+<!-- BEGIN: Navigation -->
+<nav class="sticky top-0 z-50 bg-brand-black/90 backdrop-blur-md border-b border-white/10 px-6 py-3">
+  <div class="max-w-7xl mx-auto flex justify-between items-center gap-4">
+    <a href="#" class="flex items-center shrink-0 py-1 -my-1" aria-label="Outdooit home">
+      <img src="images/outdooit.webp" alt="Outdooit" class="h-[5rem] w-auto max-w-[5rem] object-contain object-center block"/>
+    </a>
+
+    <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider">
+      <a class="hover:text-brand-neon transition" href="#services">Services</a>
+      <a class="hover:text-brand-neon transition" href="#why">Why Us</a>
+      <a class="hover:text-brand-neon transition" href="#process">Our Process</a>
+      <a class="hover:text-brand-neon transition" href="#faq">FAQ</a>
+    </div>
+
+    <div class="flex items-center space-x-6">
+      <a class="hidden lg:block font-bold text-brand-neon hover:text-white transition" href="tel:+19495705004">(949) 570-5004</a>
+      <a class="bg-brand-neon text-black px-6 py-2 rounded font-bold hover:bg-white transition" href="#audit-form">
+        Get My Local SEO Audit
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- END: Navigation -->
+
+<!-- BEGIN: Hero Section -->
+<header class="relative overflow-hidden pt-20 pb-32 bg-brand-black bg-gradient-dark">
+  <img src="images/outdooit-500x500px.webp" alt="" class="absolute right-0 bottom-0 w-96 max-w-[90vw] opacity-[0.08] pointer-events-none select-none object-contain" aria-hidden="true"/>
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+    <div data-purpose="hero-content">
+      <p class="text-brand-neon font-bold tracking-widest uppercase mb-4 text-sm">Local SEO Agency</p>
+
+      <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6 uppercase italic">
+        SEO Near Me in Orange County, CA:
+        <span class="text-brand-neon block">Local SEO That Turns Searches Into Calls</span>
+      </h1>
+
+      <p class="text-xl text-gray-400 mb-8 max-w-xl">
+        We help Orange County businesses improve Google Business Profile visibility, local rankings, and lead flow with a clear weekly plan built around buyer-intent searches.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 items-center">
+        <a class="w-full sm:w-auto text-center bg-brand-neon text-black px-8 py-4 rounded font-black text-lg hover:scale-105 transition transform neon-glow" href="#audit-form">
+          GET MY LOCAL SEO AUDIT
+        </a>
+
+      </div>
+
+      <div class="mt-12 flex items-center space-x-8 opacity-70">
+        <div class="flex items-center space-x-2">
+          <span class="text-2xl font-bold">G</span>
+          <span class="text-xs font-bold leading-tight">150+ Five-Star<br/>Google Reviews</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-2xl font-bold uppercase italic">Inc.</span>
+          <span class="text-xs font-bold leading-tight">Ranked #1421 on<br/>the INC. 5000</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative hidden lg:block">
+      <div id="audit-form" class="bg-[#111111]/70 backdrop-blur-sm p-10 rounded-[2rem] border border-white/10 shadow-2xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-brand-neon/5 blur-3xl"></div>
+
+        <h3 class="text-2xl font-black italic uppercase mb-6 tracking-tight">
+          Free Local SEO Audit <span class="text-brand-neon">&amp; Consultation</span>
+        </h3>
+
+        <form class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-1.5 ml-1">Full Name</label>
+            <input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-neon transition placeholder:text-gray-600" placeholder="John Doe" type="text"/>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-1.5 ml-1">Website URL</label>
+            <input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-neon transition placeholder:text-gray-600" placeholder="www.yourbusiness.com" type="url"/>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-1.5 ml-1">Business Email</label>
+            <input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-neon transition placeholder:text-gray-600" placeholder="john@company.com" type="email"/>
+          </div>
+
+          <button class="w-full bg-brand-neon text-black font-black uppercase italic py-4 rounded-xl mt-4 hover:bg-white transition-all transform hover:scale-[1.02] shadow-[0_10px_30px_-10px_rgba(204,255,0,0.3)]" type="submit">
+            Get My Free Audit
+          </button>
+        </form>
+
+        <p class="text-center text-gray-500 text-[10px] uppercase font-bold tracking-widest mt-6">
+          We review your GBP + website and send the top 3 opportunities.
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- END: Hero Section -->
+
+<!-- BEGIN: Pain Points & Benefits -->
+<section class="py-24 px-6 bg-white text-black">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-20 items-center mb-20">
+      <div>
+        <h2 class="text-4xl font-black uppercase italic mb-6 text-black">
+          Stop Being <span class="text-brand-neon bg-black px-2 italic">Invisible</span> To Your Local Market
+        </h2>
+
+        <ul class="space-y-6">
+          <li class="flex items-start space-x-4">
+            <span class="bg-red-50 text-red-500 p-1 rounded border border-red-100">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+              </svg>
+            </span>
+            <div>
+              <p class="font-bold text-lg">Ranking for the wrong keywords</p>
+              <p class="text-gray-500">Traffic alone does not pay the bills. We focus on buyer-intent searches that are more likely to turn into calls and jobs.</p>
+            </div>
+          </li>
+
+          <li class="flex items-start space-x-4">
+            <span class="bg-red-50 text-red-500 p-1 rounded border border-red-100">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+              </svg>
+            </span>
+            <div>
+              <p class="font-bold text-lg">Drowning in the "Map Pack" noise</p>
+              <p class="text-gray-500">Your business may be open and ready, but if you are not showing up where local buyers look first, competitors collect the calls.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-black text-white p-10 rounded-3xl border border-white/5 relative overflow-hidden shadow-2xl">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-brand-neon/10 blur-3xl"></div>
+        <h3 class="text-2xl font-bold mb-4">Ready for a Strategic Shift?</h3>
+        <p class="text-gray-400 mb-8">
+          We combine Google Business Profile optimization, local on-page SEO, and a consistent weekly system so visibility turns into measurable lead flow across Orange County.
+        </p>
+        <a class="inline-block bg-brand-neon text-black px-8 py-4 rounded font-black hover:bg-white transition" href="#audit-form">
+          GET MY LOCAL SEO AUDIT
+        </a>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-brand-lightGray p-8 rounded-2xl border-l-4 border-black">
+        <p class="text-brand-neon bg-black inline-block px-2 mb-4 font-black text-sm">01 / GBP LAG</p>
+        <h4 class="text-xl font-bold mb-2 uppercase text-black">Poor Map Visibility</h4>
+        <p class="text-gray-600 mb-6">Your Google Business Profile exists, but it is buried under stronger local competitors and not generating steady calls.</p>
+        <a class="text-black font-black text-sm uppercase tracking-tighter hover:text-brand-neon transition" href="#audit-form">Get My Local SEO Audit →</a>
+      </div>
+
+      <div class="bg-brand-lightGray p-8 rounded-2xl border-l-4 border-black">
+        <p class="text-brand-neon bg-black inline-block px-2 mb-4 font-black text-sm">02 / BAD REPUTATION</p>
+        <h4 class="text-xl font-bold mb-2 uppercase text-black">Trust Deficit</h4>
+        <p class="text-gray-600 mb-6">Weak review signals, inconsistent reputation, or unaddressed feedback can lower both conversions and local trust.</p>
+        <a class="text-black font-black text-sm uppercase tracking-tighter hover:text-brand-neon transition" href="#audit-form">Get My Local SEO Audit →</a>
+      </div>
+
+      <div class="bg-brand-lightGray p-8 rounded-2xl border-l-4 border-black">
+        <p class="text-brand-neon bg-black inline-block px-2 mb-4 font-black text-sm">03 / NO RELEVANCE</p>
+        <h4 class="text-xl font-bold mb-2 uppercase text-black">Weak Local Signal</h4>
+        <p class="text-gray-600 mb-6">Google does not clearly understand the cities, neighborhoods, and services you want to rank for.</p>
+        <a class="text-black font-black text-sm uppercase tracking-tighter hover:text-brand-neon transition" href="#audit-form">Get My Local SEO Audit →</a>
+      </div>
+    </div>
+
+    <div class="text-center mt-16 pt-4">
+      <p class="text-gray-600 mb-6 max-w-xl mx-auto">If this sounds like your situation, the next step is clear.</p>
+      <a class="inline-block bg-black text-white border-2 border-black px-8 py-4 rounded font-black hover:bg-white hover:text-black transition" href="#audit-form">Get My Local SEO Audit</a>
+    </div>
+  </div>
+</section>
+<!-- END: Pain Points & Benefits -->
+
+<!-- BEGIN: Services -->
+<section class="py-24 bg-brand-black relative overflow-hidden" id="services">
+  <img src="images/outdooit-500x500px.webp" alt="" class="absolute right-0 bottom-0 w-96 max-w-[90vw] opacity-[0.15] pointer-events-none select-none object-contain" aria-hidden="true"/>
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="text-center mb-16">
+      <p class="text-brand-neon font-bold uppercase tracking-widest text-sm mb-4">Our Services</p>
+      <h2 class="text-4xl md:text-5xl font-black italic uppercase text-white">
+        Local SEO Near Me: <span class="text-brand-neon">Maps Rankings + Lead Growth</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- GBP -->
+      <div class="group p-1 rounded-3xl transition-all duration-300 hover:scale-[1.02] bg-white/5">
+        <div class="bg-brand-black/40 backdrop-blur-sm h-full rounded-[1.4rem] p-8 border border-white/10 group-hover:border-brand-neon/50">
+          <div class="w-16 h-16 bg-brand-neon/20 rounded-2xl flex items-center justify-center mb-6 text-brand-neon">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </div>
+
+          <h3 class="text-2xl font-black uppercase italic mb-4">GBP Optimization</h3>
+          <p class="text-gray-400 mb-6">We optimize your Google Business Profile for stronger local pack visibility, better click-through rates, and more calls from high-intent local searches.</p>
+
+          <button type="button" data-modal="gbp" class="text-brand-neon font-bold flex items-center space-x-2 open-service-modal">
+            <span>VIEW MORE</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ON PAGE -->
+      <div class="group p-1 rounded-3xl transition-all duration-300 hover:scale-[1.02] bg-white/5">
+        <div class="bg-brand-black/40 backdrop-blur-sm h-full rounded-[1.4rem] p-8 border border-white/10 group-hover:border-brand-neon/50">
+          <div class="w-16 h-16 bg-brand-neon/20 rounded-2xl flex items-center justify-center mb-6 text-brand-neon">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </div>
+
+          <h3 class="text-2xl font-black uppercase italic mb-4">Local On-Page</h3>
+          <p class="text-gray-400 mb-6">We build service-area relevance into your website so Google can connect your pages with the exact searches happening across Orange County.</p>
+
+          <button type="button" data-modal="onpage" class="text-brand-neon font-bold flex items-center space-x-2 open-service-modal">
+            <span>VIEW MORE</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- REPUTATION -->
+      <div class="group p-1 rounded-3xl transition-all duration-300 hover:scale-[1.02] bg-white/5">
+        <div class="bg-brand-black/40 backdrop-blur-sm h-full rounded-[1.4rem] p-8 border border-white/10 group-hover:border-brand-neon/50">
+          <div class="w-16 h-16 bg-brand-neon/20 rounded-2xl flex items-center justify-center mb-6 text-brand-neon">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </div>
+
+          <h3 class="text-2xl font-black uppercase italic mb-4">Reputation Growth</h3>
+          <p class="text-gray-400 mb-6">We help you generate stronger review signals, improve trust, and turn real customer feedback into a ranking and conversion advantage.</p>
+
+          <button type="button" data-modal="reputation" class="text-brand-neon font-bold flex items-center space-x-2 open-service-modal">
+            <span>VIEW MORE</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-16 pt-6">
+      <p class="text-gray-400 mb-6 max-w-2xl mx-auto text-lg">We'll review your GBP + website and show you the first opportunities to improve rankings and lead flow.</p>
+      <a class="inline-block bg-brand-neon text-black px-8 py-4 rounded font-black hover:bg-white transition neon-glow" href="#audit-form">Get My Local SEO Audit</a>
+    </div>
+  </div>
+</section>
+<!-- END: Services -->
+
+<!-- BEGIN: Why -->
+<section class="py-24 bg-white text-black" id="why">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <p class="text-black font-bold uppercase tracking-widest text-sm mb-4">Why Choose Us</p>
+        <h2 class="text-5xl font-black uppercase italic leading-tight mb-8">
+          An SEO Agency Near You That <span class="text-brand-neon px-2 bg-black inline-block">Actually Feels Like a Partner</span>
+        </h2>
+
+        <div class="grid sm:grid-cols-2 gap-8">
+          <div class="border-t-2 border-black pt-4">
+            <h4 class="font-black uppercase italic text-lg">Hyper-Responsive</h4>
+            <p class="text-gray-600 text-sm mt-2">No tickets, no bots. Clear answers and direct access to the team working on your account.</p>
+          </div>
+
+          <div class="border-t-2 border-black pt-4">
+            <h4 class="font-black uppercase italic text-lg">We Listen</h4>
+            <p class="text-gray-600 text-sm mt-2">Your business goals shape the strategy so the work supports real growth, not generic SEO activity.</p>
+          </div>
+
+          <div class="border-t-2 border-black pt-4">
+            <h4 class="font-black uppercase italic text-lg">Consistency</h4>
+            <p class="text-gray-600 text-sm mt-2">A clear monthly sprint and weekly execution rhythm create compounding local gains over time.</p>
+          </div>
+
+          <div class="border-t-2 border-black pt-4">
+            <h4 class="font-black uppercase italic text-lg">Market Experts</h4>
+            <p class="text-gray-600 text-sm mt-2">We understand how local buyers search in Orange County and build around that intent.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative" id="testimonial-carousel-section" aria-label="Client testimonials">
+        <div class="relative bg-black text-white py-8 px-10 md:px-14 rounded-3xl shadow-2xl border border-white/10 min-h-[420px]">
+          <button type="button" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center text-brand-neon hover:text-white transition-colors focus:outline-none z-10" id="testimonial-prev" aria-label="Previous testimonial">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button type="button" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-14 h-14 flex items-center justify-center text-brand-neon hover:text-white transition-colors focus:outline-none z-10" id="testimonial-next" aria-label="Next testimonial">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+          <div class="overflow-hidden h-[380px] flex items-center" id="testimonial-track-wrap">
+            <div class="flex transition-transform duration-300 ease-out w-full h-full" id="testimonial-track" style="transform: translateX(0%)">
+              <div class="w-full flex-shrink-0 flex items-center justify-center min-h-full" data-testimonial-index="0">
+                <div class="text-center">
+                  <div class="flex items-center justify-center space-x-4 mb-6">
+                    <div class="w-16 h-16 rounded-full bg-brand-neon flex items-center justify-center font-bold text-2xl text-black">JW</div>
+                    <div>
+                      <h5 class="font-bold text-xl">John Walters</h5>
+                      <p class="text-gray-400 text-sm uppercase font-bold">OC Plumbing Pros</p>
+                    </div>
+                  </div>
+                  <div class="flex justify-center mb-4">
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                  </div>
+                  <p class="text-lg italic text-gray-300 leading-relaxed max-w-xl mx-auto">"Outdooit took us from page 4 to the top of the map pack in Irvine in just 90 days. We had to hire two new techs to handle the call volume."</p>
+                </div>
+              </div>
+              <div class="w-full flex-shrink-0 flex items-center justify-center min-h-full" data-testimonial-index="1">
+                <div class="text-center">
+                  <div class="flex items-center justify-center space-x-4 mb-6">
+                    <div class="w-16 h-16 rounded-full bg-brand-neon flex items-center justify-center font-bold text-2xl text-black">JL</div>
+                    <div>
+                      <h5 class="font-bold text-xl">J L</h5>
+                    </div>
+                  </div>
+                  <div class="flex justify-center mb-4">
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                  </div>
+                  <p class="text-lg italic text-gray-300 leading-relaxed max-w-xl mx-auto">"The Outdooit team has been very engaged in the entire process and have been responsive to any questions we have. We are glad that they care about our business and that they listen to our input to create something that aligns with our vision."</p>
+                </div>
+              </div>
+              <div class="w-full flex-shrink-0 flex items-center justify-center min-h-full" data-testimonial-index="2">
+                <div class="text-center">
+                  <div class="flex items-center justify-center space-x-4 mb-6">
+                    <div class="w-16 h-16 rounded-full bg-brand-neon flex items-center justify-center font-bold text-2xl text-black">SC</div>
+                    <div>
+                      <h5 class="font-bold text-xl">Sau Cheng</h5>
+                    </div>
+                  </div>
+                  <div class="flex justify-center mb-4">
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                  </div>
+                  <p class="text-lg italic text-gray-300 leading-relaxed max-w-xl mx-auto">"We wanted a local team that truly understands the Orange County market, and Dennis and Kristine delivered. They helped us with branding, website, and improved our SEO and online marketing. We've already seen more people finding us on Google and reaching out—even from outside our city. They're knowledgeable, easy to talk to, and they actually follow through."</p>
+                </div>
+              </div>
+              <div class="w-full flex-shrink-0 flex items-center justify-center min-h-full" data-testimonial-index="3">
+                <div class="text-center">
+                  <div class="flex items-center justify-center space-x-4 mb-6">
+                    <div class="w-16 h-16 rounded-full bg-brand-neon flex items-center justify-center font-bold text-2xl text-black">PP</div>
+                    <div>
+                      <h5 class="font-bold text-xl">Paul Papac</h5>
+                    </div>
+                  </div>
+                  <div class="flex justify-center mb-4">
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                    <span class="text-brand-neon px-1 mr-1">★</span>
+                  </div>
+                  <p class="text-lg italic text-gray-300 leading-relaxed max-w-xl mx-auto">"I really enjoyed working with this team on our marketing. They are easy to communicate and work with. I have seen a clear improvement in our online presence since partnering with them."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-6">
+          <a class="inline-block bg-white text-black border-2 border-black px-6 py-3 rounded font-black hover:bg-black hover:text-white transition uppercase text-sm" href="#audit-form">Get My Local SEO Audit</a>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- END: Why -->
+
+<!-- BEGIN: Process -->
+<section class="py-24 bg-brand-lightGray text-black" id="process">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <p class="text-black font-bold uppercase tracking-widest text-sm mb-4">Our Process</p>
+      <h2 class="text-5xl font-black uppercase italic leading-tight text-black">SEE HOW EASY IT IS TO GET STARTED</h2>
+    </div>
+
+    <div class="space-y-12 relative">
+      <div class="absolute left-4 top-4 bottom-4 w-1 bg-black/10 rounded-full hidden md:block"></div>
+
+      <div class="relative flex flex-col md:flex-row md:items-center md:space-x-12 group">
+        <div class="hidden md:flex flex-shrink-0 w-8 h-8 bg-black rounded-full z-10 items-center justify-center font-black text-brand-neon group-hover:scale-125 transition shadow-lg">1</div>
+        <div class="relative bg-white p-8 rounded-2xl border border-black/5 flex-grow shadow-sm group-hover:shadow-md transition overflow-hidden">
+          <span class="absolute top-8 right-8 text-black text-4xl font-black opacity-10 pointer-events-none select-none" aria-hidden="true">01</span>
+          <div class="relative z-10">
+            <h3 class="text-2xl font-black uppercase italic text-black mb-4">Audit &amp; Quick Wins</h3>
+            <p class="text-gray-600">We identify the biggest leaks in your GBP and website, then prioritize the fixes most likely to improve visibility first.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex flex-col md:flex-row md:items-center md:space-x-12 group">
+        <div class="hidden md:flex flex-shrink-0 w-8 h-8 bg-black rounded-full z-10 items-center justify-center font-black text-brand-neon group-hover:scale-125 transition shadow-lg">2</div>
+        <div class="relative bg-white p-8 rounded-2xl border border-black/5 flex-grow shadow-sm group-hover:shadow-md transition overflow-hidden">
+          <span class="absolute top-8 right-8 text-black text-4xl font-black opacity-10 pointer-events-none select-none" aria-hidden="true">02</span>
+          <div class="relative z-10">
+            <h3 class="text-2xl font-black uppercase italic text-black mb-4">Build Local Relevance</h3>
+            <p class="text-gray-600">We strengthen your service pages, local signals, and citation consistency so Google can better connect you to Orange County searches.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex flex-col md:flex-row md:items-center md:space-x-12 group">
+        <div class="hidden md:flex flex-shrink-0 w-8 h-8 bg-black rounded-full z-10 items-center justify-center font-black text-brand-neon group-hover:scale-125 transition shadow-lg">3</div>
+        <div class="relative bg-white p-8 rounded-2xl border border-black/5 flex-grow shadow-sm group-hover:shadow-md transition overflow-hidden">
+          <span class="absolute top-8 right-8 text-black text-4xl font-black opacity-10 pointer-events-none select-none" aria-hidden="true">03</span>
+          <div class="relative z-10">
+            <h3 class="text-2xl font-black uppercase italic text-black mb-4">Grow &amp; Defend</h3>
+            <p class="text-gray-600">We keep the weekly system running through profile activity, trust-building work, and ongoing local SEO improvements that compound over time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex flex-col md:flex-row md:items-center md:space-x-12 group">
+        <div class="hidden md:flex flex-shrink-0 w-8 h-8 bg-black rounded-full z-10 items-center justify-center font-black text-brand-neon group-hover:scale-125 transition shadow-lg">4</div>
+        <div class="relative bg-white p-8 rounded-2xl border border-black/5 flex-grow shadow-sm group-hover:shadow-md transition overflow-hidden">
+          <span class="absolute top-8 right-8 text-black text-4xl font-black opacity-10 pointer-events-none select-none" aria-hidden="true">04</span>
+          <div class="relative z-10">
+            <h3 class="text-2xl font-black uppercase italic text-black mb-4">Report Clearly (Monthly)</h3>
+            <p class="text-gray-600">You'll always know what changed, why it matters, and what we're doing next.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-14">
+      <p class="text-gray-600 mb-6">Ready to start? Step one begins with your audit.</p>
+      <a class="inline-block bg-black text-white border-2 border-black px-8 py-4 rounded font-black hover:bg-white hover:text-black transition" href="#audit-form">Get My Local SEO Audit</a>
+    </div>
+  </div>
+</section>
+<!-- END: Process -->
+
+<!-- BEGIN: Fit -->
+<section class="py-24 bg-brand-black border-y border-white/5">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+    <div class="bg-green-900/10 p-10 rounded-3xl border border-green-500/20">
+      <h3 class="text-2xl font-bold mb-8 uppercase italic text-green-400">
+        Who We Are a <span class="bg-green-500 text-black px-2">PERFECT FIT</span> for:
+      </h3>
+
+      <ul class="space-y-4">
+        <li class="flex items-center space-x-3 text-white">
+          <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+            <path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path>
+          </svg>
+          <span class="font-medium">Local service businesses that want more qualified calls and better Google visibility.</span>
+        </li>
+
+        <li class="flex items-center space-x-3 text-white">
+          <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+            <path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path>
+          </svg>
+          <span class="font-medium">Owners who understand that sustainable local SEO takes consistent execution.</span>
+        </li>
+
+        <li class="flex items-center space-x-3 text-white">
+          <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+            <path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path>
+          </svg>
+          <span class="font-medium">Businesses aiming to strengthen their presence in Orange County and nearby target cities.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bg-red-900/10 p-10 rounded-3xl border border-red-500/20">
+      <h3 class="text-2xl font-bold mb-8 uppercase italic text-red-400">
+        Who We are <span class="bg-red-500 text-black px-2">NOT IDEAL</span> for:
+      </h3>
+
+      <ul class="space-y-4">
+        <li class="flex items-center space-x-3 text-white">
+          <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+          </svg>
+          <span class="font-medium text-gray-300">National brands with no local presence or no real service-area strategy.</span>
+        </li>
+
+        <li class="flex items-center space-x-3 text-white">
+          <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+          </svg>
+          <span class="font-medium text-gray-300">Businesses looking for a one-time setup with no ongoing optimization.</span>
+        </li>
+
+        <li class="flex items-center space-x-3 text-white">
+          <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+          </svg>
+          <span class="font-medium text-gray-300">People expecting overnight rankings without changes to the website, profile, or trust signals.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 mt-16 text-center">
+    <p class="text-gray-400 mb-6">If you're a fit, the next step is simple.</p>
+    <a class="inline-block bg-brand-neon text-black px-8 py-4 rounded font-black hover:bg-white transition" href="#audit-form">Get My Local SEO Audit</a>
+  </div>
+</section>
+<!-- END: Fit -->
+
+<!-- BEGIN: FAQ -->
+<section class="py-24 bg-brand-black" id="faq">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl font-black uppercase italic mb-12 text-center text-white">Frequently Asked Questions</h2>
+
+    <div class="faq-accordion space-y-4">
+      <div class="faq-item is-open bg-brand-gray border border-white/5 rounded-2xl overflow-hidden">
+        <button type="button" class="faq-trigger w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-white/5 transition" aria-expanded="true" aria-controls="faq-answer-1" id="faq-trigger-1">
+          <span class="font-bold text-lg uppercase italic text-white">Do you offer local SEO services for businesses in Orange County?</span>
+          <span class="faq-icon flex-shrink-0 text-brand-neon" aria-hidden="true">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </span>
+        </button>
+        <div id="faq-answer-1" class="faq-panel" role="region" aria-labelledby="faq-trigger-1">
+          <div class="faq-panel-inner px-6 pb-6">
+            <p class="text-gray-300 leading-relaxed">Yes. We help businesses in Orange County improve their visibility in Google Maps and local search results by combining Google Business Profile optimization, local on-page SEO, and a clear execution plan focused on lead generation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item bg-brand-gray border border-white/5 rounded-2xl overflow-hidden">
+        <button type="button" class="faq-trigger w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-white/5 transition" aria-expanded="false" aria-controls="faq-answer-2" id="faq-trigger-2">
+          <span class="font-bold text-lg uppercase italic text-white">How long does it take to see progress in Google Maps and local rankings?</span>
+          <span class="faq-icon flex-shrink-0 text-brand-neon" aria-hidden="true">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </span>
+        </button>
+        <div id="faq-answer-2" class="faq-panel" role="region" aria-labelledby="faq-trigger-2">
+          <div class="faq-panel-inner px-6 pb-6">
+            <p class="text-gray-300 leading-relaxed">It depends on your starting point, competition, and the condition of your website and Google Business Profile. Many businesses see early movement after the initial fixes, but stronger and more consistent gains usually come from ongoing work over time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item bg-brand-gray border border-white/5 rounded-2xl overflow-hidden">
+        <button type="button" class="faq-trigger w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-white/5 transition" aria-expanded="false" aria-controls="faq-answer-3" id="faq-trigger-3">
+          <span class="font-bold text-lg uppercase italic text-white">What makes you different from other local SEO agencies?</span>
+          <span class="faq-icon flex-shrink-0 text-brand-neon" aria-hidden="true">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </span>
+        </button>
+        <div id="faq-answer-3" class="faq-panel" role="region" aria-labelledby="faq-trigger-3">
+          <div class="faq-panel-inner px-6 pb-6">
+            <p class="text-gray-300 leading-relaxed">We focus on strategy, clarity, and consistency. Instead of vague SEO activity, we prioritize the actions most likely to improve visibility, trust, and lead flow. You also get a partner that communicates clearly and builds the plan around your business goals.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item bg-brand-gray border border-white/5 rounded-2xl overflow-hidden">
+        <button type="button" class="faq-trigger w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-white/5 transition" aria-expanded="false" aria-controls="faq-answer-4" id="faq-trigger-4">
+          <span class="font-bold text-lg uppercase italic text-white">What does the free local SEO audit include?</span>
+          <span class="faq-icon flex-shrink-0 text-brand-neon" aria-hidden="true">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </span>
+        </button>
+        <div id="faq-answer-4" class="faq-panel" role="region" aria-labelledby="faq-trigger-4">
+          <div class="faq-panel-inner px-6 pb-6">
+            <p class="text-gray-300 leading-relaxed">Our free audit reviews your Google Business Profile and website to identify the most important opportunities for improvement. We look for issues affecting local visibility, relevance, trust signals, and lead generation potential, then show you the first areas we would prioritize.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item bg-brand-gray border border-white/5 rounded-2xl overflow-hidden">
+        <button type="button" class="faq-trigger w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-white/5 transition" aria-expanded="false" aria-controls="faq-answer-5" id="faq-trigger-5">
+          <span class="font-bold text-lg uppercase italic text-white">Do I need to update my website or Google Business Profile to get results?</span>
+          <span class="faq-icon flex-shrink-0 text-brand-neon" aria-hidden="true">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </span>
+        </button>
+        <div id="faq-answer-5" class="faq-panel" role="region" aria-labelledby="faq-trigger-5">
+          <div class="faq-panel-inner px-6 pb-6">
+            <p class="text-gray-300 leading-relaxed">In most cases, yes. Better rankings usually require improvements to your website, your Google Business Profile, or both. Local SEO works best when your pages, profile, and trust signals all support the same local search goals.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item bg-brand-gray border border-white/5 rounded-2xl overflow-hidden">
+        <button type="button" class="faq-trigger w-full text-left p-6 flex justify-between items-center gap-4 hover:bg-white/5 transition" aria-expanded="false" aria-controls="faq-answer-6" id="faq-trigger-6">
+          <span class="font-bold text-lg uppercase italic text-white">Is this a good fit for home service businesses?</span>
+          <span class="faq-icon flex-shrink-0 text-brand-neon" aria-hidden="true">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </span>
+        </button>
+        <div id="faq-answer-6" class="faq-panel" role="region" aria-labelledby="faq-trigger-6">
+          <div class="faq-panel-inner px-6 pb-6">
+            <p class="text-gray-300 leading-relaxed">Yes. Home service businesses are often a strong fit because local intent is high and customers are actively searching for providers in their area. If calls, service-area visibility, and local lead flow matter to your business, this approach can be especially effective.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-14 pt-6">
+      <p class="text-gray-400 mb-6">Still have questions? Get a free audit and we'll outline the first steps for your business.</p>
+      <a class="inline-block bg-brand-neon text-black px-8 py-4 rounded font-black hover:bg-white transition" href="#audit-form">Get My Local SEO Audit</a>
+    </div>
+  </div>
+</section>
+<!-- END: FAQ -->
+
+<!-- BEGIN: Final CTA -->
+<section class="py-24 px-6 bg-white">
+  <div class="max-w-7xl mx-auto bg-black rounded-[3rem] p-12 md:p-24 text-center text-white overflow-hidden relative shadow-[0_40px_100px_-15px_rgba(0,0,0,0.5)]">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-brand-neon/10 blur-3xl rounded-full"></div>
+
+    <h2 class="text-5xl md:text-8xl font-black uppercase italic mb-8 relative z-10 leading-tight">
+      DOMINATE YOUR <br/><span class="text-brand-neon bg-white/10 px-4 italic">LOCAL MARKET</span>
+    </h2>
+
+    <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-medium">
+      Ready to see what is holding your business back? Request your free local SEO audit and get a clearer path to stronger rankings, visibility, and lead flow.
+    </p>
+
+    <a class="inline-block bg-brand-neon text-black px-12 py-6 rounded-full font-black text-2xl hover:scale-105 transition transform shadow-2xl neon-glow" href="#audit-form">
+      GET MY LOCAL SEO AUDIT
+    </a>
+  </div>
+</section>
+<!-- END: Final CTA -->
+
+<!-- BEGIN: Footer -->
+<footer class="bg-brand-black pt-24 pb-12 border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-12 mb-16">
+      <div class="col-span-1 md:col-span-2">
+        <a href="#" class="inline-flex items-center mb-6" aria-label="Outdooit home">
+          <img src="images/outdooit.webp" alt="Outdooit" class="h-[8rem] w-auto max-w-[8rem] object-contain block"/>
+        </a>
+
+        <p class="text-gray-500 max-w-xs mb-8">
+          A local SEO agency helping Orange County businesses turn Google visibility into qualified calls, booked jobs, and measurable growth.        </p>
+
+      </div>
+
+      <div>
+        <h4 class="font-bold uppercase mb-6 text-sm tracking-widest text-brand-neon">Quick Links</h4>
+        <ul class="space-y-4 text-gray-500 font-medium">
+          <li><a class="hover:text-white transition" href="#services">Services</a></li>
+          <li><a class="hover:text-white transition" href="#why">Why Us</a></li>
+          <li><a class="hover:text-white transition" href="#process">Our Process</a></li>
+          <li><a class="hover:text-white transition" href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold uppercase mb-6 text-sm tracking-widest text-brand-neon">Location</h4>
+        <p class="text-gray-500 font-medium leading-relaxed">
+          Orange County<br/><br/>
+          <a class="text-white hover:text-brand-neon transition" href="tel:+19495705004">(949) 570-5004</a><br/><br/>
+          <a class="text-white hover:text-brand-neon transition" href="mailto:dennis.korol@outdooit.com">dennis.korol@outdooit.com</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 uppercase font-black">
+      <p>© <span id="footer-year"></span> OUTDOOIT LOCAL SEO. ALL RIGHTS RESERVED.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <a class="hover:text-brand-neon transition" href="privacy-policy.html">Privacy Policy</a>
+        <a class="hover:text-brand-neon transition" href="terms-of-service.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- END: Footer -->
+
+<!-- BEGIN: Service Modal -->
+<div id="service-modal" class="fixed inset-0 z-[999] hidden">
+  <div id="service-modal-overlay" class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+
+  <div class="relative z-10 flex min-h-full items-center justify-center p-4 md:p-8">
+    <div id="service-modal-panel" class="w-full max-w-2xl rounded-[2rem] bg-[#111111] border border-white/10 shadow-2xl overflow-hidden transform scale-95 opacity-0 transition-all duration-300">
+      <div class="relative p-8 md:p-10">
+        <button
+          id="service-modal-close"
+          type="button"
+          class="absolute top-5 right-5 w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 text-white flex items-center justify-center transition"
+          aria-label="Close modal"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+          </svg>
+        </button>
+
+        <p id="service-modal-tag" class="text-brand-neon font-bold uppercase tracking-widest text-xs mb-4"></p>
+
+        <h3 id="service-modal-title" class="text-3xl md:text-4xl font-black uppercase italic mb-4 text-white"></h3>
+
+        <p id="service-modal-description" class="text-gray-400 text-lg leading-relaxed mb-8"></p>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 mb-8">
+          <h4 class="text-white font-bold uppercase tracking-wider text-sm mb-4">What this includes</h4>
+          <ul id="service-modal-list" class="space-y-3 text-gray-300"></ul>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 sm:items-center">
+          <a
+            href="#audit-form"
+            id="service-modal-cta"
+            class="inline-block text-center bg-brand-neon text-black px-8 py-4 rounded-full font-black text-lg hover:scale-105 transition transform neon-glow"
+          >
+            Get My Local SEO Audit
+          </a>
+
+          <button
+            id="service-modal-secondary-close"
+            type="button"
+            class="text-gray-400 hover:text-white transition font-bold uppercase text-sm tracking-wider"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END: Service Modal -->
+
+<!-- BEGIN: Audit Form Modal -->
+<div id="audit-form-modal" class="fixed inset-0 z-[1000] hidden" aria-modal="true" aria-labelledby="audit-modal-title" role="dialog">
+  <div id="audit-form-overlay" class="absolute inset-0 bg-black/85 backdrop-blur-sm"></div>
+  <div class="relative z-10 flex min-h-full items-center justify-center p-4 md:p-8">
+    <div id="audit-form-panel" class="w-full max-w-md rounded-[2rem] bg-[#111111] border border-white/10 shadow-2xl overflow-hidden transform scale-95 opacity-0 transition-all duration-300 relative">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-brand-neon/5 blur-3xl pointer-events-none"></div>
+      <button type="button" id="audit-form-close" class="absolute top-5 right-5 w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 text-white flex items-center justify-center transition z-10" aria-label="Close">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+      </button>
+      <div class="relative p-8 md:p-10">
+        <h3 id="audit-modal-title" class="text-2xl font-black italic uppercase mb-6 tracking-tight text-white">
+          Free Local SEO Audit <span class="text-brand-neon">&amp; Consultation</span>
+        </h3>
+        <form class="space-y-4 audit-form-in-modal">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-1.5 ml-1">Full Name</label>
+            <input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-neon transition placeholder:text-gray-600" placeholder="John Doe" type="text" name="name"/>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-1.5 ml-1">Website URL</label>
+            <input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-neon transition placeholder:text-gray-600" placeholder="www.yourbusiness.com" type="url" name="website"/>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-1.5 ml-1">Business Email</label>
+            <input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-neon transition placeholder:text-gray-600" placeholder="john@company.com" type="email" name="email"/>
+          </div>
+          <button class="w-full bg-brand-neon text-black font-black uppercase italic py-4 rounded-xl mt-4 hover:bg-white transition-all transform hover:scale-[1.02] shadow-[0_10px_30px_-10px_rgba(204,255,0,0.3)]" type="submit">
+            Get My Free Audit
+          </button>
+        </form>
+        <p class="text-center text-gray-500 text-[10px] uppercase font-bold tracking-widest mt-6">
+          We review your GBP + website and send the top 3 opportunities.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END: Audit Form Modal -->
+
+<script>
+  (function () {
+    var el = document.getElementById("footer-year");
+    if (el) el.textContent = new Date().getFullYear();
+  })();
+
+  (function () {
+    var accordion = document.querySelector(".faq-accordion");
+    if (!accordion) return;
+
+    var items = accordion.querySelectorAll(".faq-item");
+    var triggers = accordion.querySelectorAll(".faq-trigger");
+
+    function closeAll() {
+      items.forEach(function (item) {
+        item.classList.remove("is-open");
+      });
+      triggers.forEach(function (btn) {
+        btn.setAttribute("aria-expanded", "false");
+      });
+    }
+
+    function openItem(item, trigger) {
+      item.classList.add("is-open");
+      trigger.setAttribute("aria-expanded", "true");
+    }
+
+    triggers.forEach(function (trigger) {
+      trigger.addEventListener("click", function () {
+        var item = this.closest(".faq-item");
+        var isOpen = item.classList.contains("is-open");
+
+        closeAll();
+        if (!isOpen) {
+          openItem(item, this);
+        }
+      });
+    });
+  })();
+
+  (function () {
+    var auditModal = document.getElementById("audit-form-modal");
+    var auditPanel = document.getElementById("audit-form-panel");
+    var auditOverlay = document.getElementById("audit-form-overlay");
+    var auditClose = document.getElementById("audit-form-close");
+
+    function openAuditModal() {
+      if (!auditModal) return;
+      auditModal.classList.remove("hidden");
+      document.body.classList.add("overflow-hidden");
+      requestAnimationFrame(function () {
+        auditPanel.classList.remove("scale-95", "opacity-0");
+        auditPanel.classList.add("scale-100", "opacity-100");
+      });
+    }
+
+    function closeAuditModal() {
+      if (!auditPanel) return;
+      auditPanel.classList.remove("scale-100", "opacity-100");
+      auditPanel.classList.add("scale-95", "opacity-0");
+      setTimeout(function () {
+        auditModal.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+      }, 250);
+    }
+
+    document.body.addEventListener("click", function (e) {
+      var link = e.target.closest("a[href='#audit-form']");
+      if (link) {
+        e.preventDefault();
+        openAuditModal();
+      }
+    });
+
+    if (auditOverlay) auditOverlay.addEventListener("click", closeAuditModal);
+    if (auditClose) auditClose.addEventListener("click", closeAuditModal);
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && auditModal && !auditModal.classList.contains("hidden")) {
+        closeAuditModal();
+      }
+    });
+
+    window.openAuditModal = openAuditModal;
+  })();
+
+  const serviceModalContent = {
+    gbp: {
+      tag: "Service Details",
+      title: "GBP Optimization",
+      description:
+        "We optimize your Google Business Profile so it becomes a stronger local lead-generation asset, not just a listing that sits there without producing steady calls.",
+      items: [
+        "Primary and secondary category alignment based on local buyer intent",
+        "Service and product setup to improve relevance for Orange County searches",
+        "Photo, post, and profile activity recommendations to keep the listing competitive",
+        "Conversion-focused profile improvements that support more calls, clicks, and actions"
+      ]
+    },
+    onpage: {
+      tag: "Service Details",
+      title: "Local On-Page",
+      description:
+        "We build stronger local relevance into your website so Google can better understand what you do, where you do it, and which searches your pages should appear for.",
+      items: [
+        "Service-area page strategy for Orange County and target cities",
+        "Better local keyword targeting through structure, copy, and internal linking",
+        "Local trust signals such as service areas, FAQs, and supporting schema",
+        "Technical cleanup to remove blockers that weaken rankings and crawlability"
+      ]
+    },
+    reputation: {
+      tag: "Service Details",
+      title: "Reputation Growth",
+      description:
+        "We help you improve review quality, consistency, and trust signals so your reputation supports both higher conversions and stronger local SEO performance.",
+      items: [
+        "Review request workflow designed to increase response rates",
+        "Messaging and timing guidance to generate more quality reviews",
+        "Review response playbooks, including negative review handling",
+        "Using review themes and customer language as trust and relevance signals"
+      ]
+    }
+  };
+
+  const modal = document.getElementById("service-modal");
+  const modalPanel = document.getElementById("service-modal-panel");
+  const modalOverlay = document.getElementById("service-modal-overlay");
+  const modalClose = document.getElementById("service-modal-close");
+  const modalSecondaryClose = document.getElementById("service-modal-secondary-close");
+  const modalTag = document.getElementById("service-modal-tag");
+  const modalTitle = document.getElementById("service-modal-title");
+  const modalDescription = document.getElementById("service-modal-description");
+  const modalList = document.getElementById("service-modal-list");
+  const modalCta = document.getElementById("service-modal-cta");
+
+  function openServiceModal(key) {
+    const content = serviceModalContent[key];
+    if (!content) return;
+
+    modalTag.textContent = content.tag;
+    modalTitle.textContent = content.title;
+    modalDescription.textContent = content.description;
+
+    modalList.innerHTML = content.items.map(item => `
+      <li class="flex items-start gap-3">
+        <span class="mt-1 text-brand-neon">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+          </svg>
+        </span>
+        <span>${item}</span>
+      </li>
+    `).join("");
+
+    modal.classList.remove("hidden");
+    document.body.classList.add("overflow-hidden");
+
+    requestAnimationFrame(() => {
+      modalPanel.classList.remove("scale-95", "opacity-0");
+      modalPanel.classList.add("scale-100", "opacity-100");
+    });
+  }
+
+  function closeServiceModal() {
+    modalPanel.classList.remove("scale-100", "opacity-100");
+    modalPanel.classList.add("scale-95", "opacity-0");
+
+    setTimeout(() => {
+      modal.classList.add("hidden");
+      document.body.classList.remove("overflow-hidden");
+    }, 250);
+  }
+
+  document.querySelectorAll(".open-service-modal").forEach(button => {
+    button.addEventListener("click", () => {
+      openServiceModal(button.dataset.modal);
+    });
+  });
+
+  modalOverlay.addEventListener("click", closeServiceModal);
+  modalClose.addEventListener("click", closeServiceModal);
+  modalSecondaryClose.addEventListener("click", closeServiceModal);
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+      closeServiceModal();
+    }
+  });
+
+  modalCta.addEventListener("click", function (e) {
+    e.preventDefault();
+    closeServiceModal();
+    if (window.openAuditModal) window.openAuditModal();
+  });
+
+  (function testimonialCarousel() {
+    var track = document.getElementById("testimonial-track");
+    var prevBtn = document.getElementById("testimonial-prev");
+    var nextBtn = document.getElementById("testimonial-next");
+    var dots = document.querySelectorAll("#testimonial-dots [data-index]");
+    var wrap = document.getElementById("testimonial-track-wrap");
+    if (!track || !prevBtn || !nextBtn) return;
+
+    var total = 4;
+    var current = 0;
+    var autoInterval;
+    var AUTO_MS = 5000;
+
+    function goTo(index) {
+      current = (index + total) % total;
+      track.style.transform = "translateX(-" + current * 100 + "%)";
+      if (dots.length) dots.forEach(function (d, i) {
+        d.setAttribute("aria-selected", i === current ? "true" : "false");
+        d.classList.toggle("bg-brand-neon", i === current);
+        d.classList.toggle("bg-gray-400", i !== current);
+      });
+    }
+
+    function next() {
+      goTo(current + 1);
+    }
+
+    function prev() {
+      goTo(current - 1);
+    }
+
+    function startAuto() {
+      stopAuto();
+      autoInterval = setInterval(next, AUTO_MS);
+    }
+
+    function stopAuto() {
+      if (autoInterval) {
+        clearInterval(autoInterval);
+        autoInterval = null;
+      }
+    }
+
+    prevBtn.addEventListener("click", function () {
+      prev();
+      startAuto();
+    });
+    nextBtn.addEventListener("click", function () {
+      next();
+      startAuto();
+    });
+    if (dots.length) dots.forEach(function (d) {
+      d.addEventListener("click", function () {
+        var idx = parseInt(d.getAttribute("data-index"), 10);
+        if (!isNaN(idx)) goTo(idx);
+        startAuto();
+      });
+    });
+
+    if (wrap) {
+      wrap.addEventListener("mouseenter", stopAuto);
+      wrap.addEventListener("mouseleave", startAuto);
+    }
+
+    document.addEventListener("keydown", function (e) {
+      var section = document.getElementById("testimonial-carousel-section");
+      if (!section || !section.contains(document.activeElement)) return;
+      if (e.key === "ArrowLeft") {
+        prev();
+        startAuto();
+        e.preventDefault();
+      } else if (e.key === "ArrowRight") {
+        next();
+        startAuto();
+        e.preventDefault();
+      }
+    });
+
+    goTo(0);
+    startAuto();
+  })();
+</script>
+
+</body>
+</html>
