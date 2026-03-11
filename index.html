@@ -8,9 +8,9 @@
 <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin/>
 <link rel="dns-prefetch" href="https://cdn.tailwindcss.com"/>
 <link rel="preload" as="image" href="images/outdooit.webp"/>
+<link rel="preload" href="https://cdn.tailwindcss.com?plugins=forms,container-queries" as="script"/>
 
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
 <script>
   tailwind.config = {
     theme: {
@@ -33,6 +33,8 @@
 </script>
 
 <style>
+  /* Critical: evita fondo blanco y texto invisible mientras carga Tailwind */
+  body{background:#000;color:#fff;}
   html {
     scroll-behavior: smooth;
   }
@@ -127,7 +129,7 @@
 <nav class="sticky top-0 z-50 bg-brand-black/90 backdrop-blur-md border-b border-white/10 px-4 sm:px-6 py-3">
   <div class="max-w-7xl mx-auto flex justify-between items-center gap-2 sm:gap-4">
     <a href="#" class="flex items-center shrink-0 py-1 -my-1" aria-label="Outdooit home">
-      <img src="images/outdooit.webp" alt="Outdooit" class="h-[5rem] w-auto max-w-[5rem] object-contain object-center block" width="80" height="80" fetchpriority="high"/>
+      <img src="images/outdooit.webp" alt="Outdooit" class="h-[5rem] w-auto max-w-[5rem] object-contain object-center block" width="80" height="80" fetchpriority="high" decoding="async"/>
     </a>
 
     <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider">
@@ -147,9 +149,10 @@
 </nav>
 <!-- END: Navigation -->
 
+<main id="main-content">
 <!-- BEGIN: Hero Section -->
 <header class="relative overflow-hidden pt-12 sm:pt-16 lg:pt-20 pb-20 sm:pb-24 lg:pb-32 bg-brand-black bg-gradient-dark">
-  <img src="images/outdooit-500x500px.webp" alt="" class="absolute right-0 bottom-0 w-32 max-w-[45vw] sm:w-56 sm:max-w-[60vw] md:w-72 lg:w-96 lg:max-w-[90vw] opacity-[0.08] pointer-events-none select-none object-contain object-right-bottom" width="384" height="384" loading="lazy" aria-hidden="true"/>
+  <img src="images/outdooit-500x500px.webp" alt="" class="absolute right-0 bottom-0 w-32 max-w-[45vw] sm:w-56 sm:max-w-[60vw] md:w-72 lg:w-96 lg:max-w-[90vw] opacity-[0.08] pointer-events-none select-none object-contain object-right-bottom" width="384" height="384" loading="lazy" decoding="async" aria-hidden="true"/>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center relative z-10 min-w-0">
     <div data-purpose="hero-content" class="min-w-0">
       <p class="text-brand-neon font-bold tracking-widest uppercase mb-4 text-sm">Local SEO Agency</p>
@@ -175,23 +178,23 @@
       <div id="audit-form" class="bg-[#111111]/70 backdrop-blur-sm p-10 rounded-[2rem] border border-white/10 shadow-2xl relative overflow-hidden">
         <div class="absolute top-0 right-0 w-32 h-32 bg-brand-neon/5 blur-3xl"></div>
 
-        <h3 class="text-2xl font-black italic uppercase mb-6 tracking-tight">
+        <h2 class="text-2xl font-black italic uppercase mb-6 tracking-tight">
           Free Local SEO Audit <span class="text-brand-neon">&amp; Consultation</span>
-        </h3>
+        </h2>
 
         <form class="space-y-4">
           <div>
-            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-1.5 ml-1">Full Name</label>
+            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-1.5 ml-1">Full Name</label>
             <input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-neon transition placeholder:text-gray-600" placeholder="John Doe" type="text"/>
           </div>
 
           <div>
-            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-1.5 ml-1">Website URL</label>
+            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-1.5 ml-1">Website URL</label>
             <input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-neon transition placeholder:text-gray-600" placeholder="www.yourbusiness.com" type="url"/>
           </div>
 
           <div>
-            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-1.5 ml-1">Business Email</label>
+            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-1.5 ml-1">Business Email</label>
             <input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-neon transition placeholder:text-gray-600" placeholder="john@company.com" type="email"/>
           </div>
 
@@ -200,25 +203,25 @@
           </button>
         </form>
 
-        <p class="text-center text-gray-500 text-[10px] uppercase font-bold tracking-widest mt-6">
+        <p class="text-center text-gray-400 text-[10px] uppercase font-bold tracking-widest mt-6">
           We review your GBP + website and send the top 3 opportunities.
         </p>
       </div>
     </div>
 
     <div class="w-full min-w-0 max-w-7xl mx-auto px-0 sm:px-6 mt-8 sm:mt-12 lg:mt-16 pt-6 sm:pt-8 pb-6 sm:pb-8 border-t border-white/10 relative z-10 lg:col-span-2 overflow-x-hidden">
-      <p class="text-xs font-bold uppercase tracking-widest text-gray-500 text-center mb-4 sm:mb-8 px-4 sm:px-0">Trusted by</p>
+      <p class="text-xs font-bold uppercase tracking-widest text-gray-400 text-center mb-4 sm:mb-8 px-4 sm:px-0">Trusted by</p>
       <div class="overflow-hidden w-full">
         <div class="hero-logos-track flex flex-nowrap items-center gap-8 sm:gap-12 w-max">
           <div class="flex flex-nowrap items-center gap-8 sm:gap-12 shrink-0">
-            <img src="images/Logos/berlitz.webp" alt="Berlitz" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy"/>
-            <img src="images/Logos/bccannabisstore.webp" alt="BC Cannabis Store" class="hero-logo h-10 sm:h-12 w-auto max-w-24 sm:max-w-28 object-contain shrink-0" width="112" height="48" loading="lazy"/>
-            <img src="images/Logos/contractors%20liability.webp" alt="Contractors Liability" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy"/>
-            <img src="images/Logos/herman%20legal%20group.webp" alt="Herman Legal Group" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy"/>
-            <img src="images/Logos/house%20sigma.webp" alt="House Sigma" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy"/>
-            <img src="images/Logos/modulex.webp" alt="Modulex" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy"/>
-            <img src="images/Logos/handyman.webp" alt="Mr. Handyman" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy"/>
-            <img src="images/Logos/pizzahut.webp" alt="Pizza Hut" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy"/>
+            <img src="images/Logos/berlitz.webp" alt="Berlitz" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy" decoding="async"/>
+            <img src="images/Logos/bccannabisstore.webp" alt="BC Cannabis Store" class="hero-logo h-10 sm:h-12 w-auto max-w-24 sm:max-w-28 object-contain shrink-0" width="112" height="48" loading="lazy" decoding="async"/>
+            <img src="images/Logos/contractors%20liability.webp" alt="Contractors Liability" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy" decoding="async"/>
+            <img src="images/Logos/herman%20legal%20group.webp" alt="Herman Legal Group" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy" decoding="async"/>
+            <img src="images/Logos/house%20sigma.webp" alt="House Sigma" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy" decoding="async"/>
+            <img src="images/Logos/modulex.webp" alt="Modulex" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy" decoding="async"/>
+            <img src="images/Logos/handyman.webp" alt="Mr. Handyman" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy" decoding="async"/>
+            <img src="images/Logos/pizzahut.webp" alt="Pizza Hut" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48" loading="lazy" decoding="async"/>
           </div>
           <div class="flex flex-nowrap items-center gap-8 sm:gap-12 shrink-0" aria-hidden="true">
             <img src="images/Logos/berlitz.webp" alt="" class="hero-logo h-10 sm:h-12 w-auto object-contain shrink-0" width="96" height="48"/>
@@ -318,7 +321,7 @@
 
 <!-- BEGIN: Services -->
 <section class="py-12 sm:py-16 lg:py-24 bg-brand-black relative overflow-hidden" id="services">
-  <img src="images/outdooit-500x500px.webp" alt="" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:left-0 lg:bottom-0 lg:top-auto lg:right-auto lg:translate-x-0 lg:translate-y-0 w-96 max-w-[90vw] opacity-[0.15] pointer-events-none select-none object-contain object-center lg:object-left-bottom" width="384" height="384" loading="lazy" aria-hidden="true"/>
+  <img src="images/outdooit-500x500px.webp" alt="" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:left-0 lg:bottom-0 lg:top-auto lg:right-auto lg:translate-x-0 lg:translate-y-0 w-96 max-w-[90vw] opacity-[0.15] pointer-events-none select-none object-contain object-center lg:object-left-bottom" width="384" height="384" loading="lazy" decoding="async" aria-hidden="true"/>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
     <div class="text-center mb-16">
       <p class="text-brand-neon font-bold uppercase tracking-widest text-sm mb-4">Our Services</p>
@@ -413,22 +416,22 @@
 
         <div class="grid sm:grid-cols-2 gap-8">
           <div class="border-t-2 border-black pt-4">
-            <h4 class="font-black uppercase italic text-lg">Hyper-Responsive</h4>
+            <h3 class="font-black uppercase italic text-lg">Hyper-Responsive</h3>
             <p class="text-gray-600 text-sm mt-2">No tickets, no bots. Clear answers and direct access to the team working on your account.</p>
           </div>
 
           <div class="border-t-2 border-black pt-4">
-            <h4 class="font-black uppercase italic text-lg">We Listen</h4>
+            <h3 class="font-black uppercase italic text-lg">We Listen</h3>
             <p class="text-gray-600 text-sm mt-2">Your business goals shape the strategy so the work supports real growth, not generic SEO activity.</p>
           </div>
 
           <div class="border-t-2 border-black pt-4">
-            <h4 class="font-black uppercase italic text-lg">Consistency</h4>
+            <h3 class="font-black uppercase italic text-lg">Consistency</h3>
             <p class="text-gray-600 text-sm mt-2">A clear monthly sprint and weekly execution rhythm create compounding local gains over time.</p>
           </div>
 
           <div class="border-t-2 border-black pt-4">
-            <h4 class="font-black uppercase italic text-lg">Market Experts</h4>
+            <h3 class="font-black uppercase italic text-lg">Market Experts</h3>
             <p class="text-gray-600 text-sm mt-2">We understand how local buyers search in Orange County and build around that intent.</p>
           </div>
         </div>
@@ -792,24 +795,26 @@
 </section>
 <!-- END: Final CTA -->
 
+</main>
+
 <!-- BEGIN: Footer -->
 <footer class="bg-brand-black pt-12 sm:pt-16 lg:pt-24 pb-8 sm:pb-12 border-t border-white/10 overflow-x-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div class="flex flex-col md:grid md:grid-cols-4 gap-8 md:gap-12 mb-16">
       <div class="flex flex-col items-center lg:items-start text-center lg:text-left w-full md:col-span-2">
         <a href="#" class="inline-flex items-center mb-6" aria-label="Outdooit home">
-          <img src="images/outdooit.webp" alt="Outdooit" class="h-[8rem] w-auto max-w-[8rem] object-contain block" width="128" height="128" loading="lazy"/>
+          <img src="images/outdooit.webp" alt="Outdooit" class="h-[8rem] w-auto max-w-[8rem] object-contain block" width="128" height="128" loading="lazy" decoding="async"/>
         </a>
 
-        <p class="text-gray-500 max-w-xs mb-8 w-full">
+        <p class="text-gray-400 max-w-xs mb-8 w-full">
           A local SEO agency helping Orange County businesses turn Google visibility into qualified calls, booked jobs, and measurable growth.        </p>
 
       </div>
 
       <div class="flex flex-row flex-wrap gap-8 md:contents">
         <div class="flex-1 min-w-[140px]">
-          <h4 class="font-bold uppercase mb-6 text-sm tracking-widest text-brand-neon">Quick Links</h4>
-          <ul class="space-y-4 text-gray-500 font-medium">
+          <h2 class="font-bold uppercase mb-6 text-sm tracking-widest text-brand-neon">Quick Links</h2>
+          <ul class="space-y-4 text-gray-400 font-medium">
             <li><a class="hover:text-white transition" href="#services">Services</a></li>
             <li><a class="hover:text-white transition" href="#why">Why Us</a></li>
             <li><a class="hover:text-white transition" href="#process">Our Process</a></li>
@@ -818,8 +823,8 @@
         </div>
 
         <div class="flex-1 min-w-[200px] w-full sm:w-auto">
-          <h4 class="font-bold uppercase mb-6 text-sm tracking-widest text-brand-neon">Location</h4>
-          <p class="text-gray-500 font-medium leading-relaxed">
+          <h2 class="font-bold uppercase mb-6 text-sm tracking-widest text-brand-neon">Location</h2>
+          <p class="text-gray-400 font-medium leading-relaxed">
             Orange County<br/><br/>
             <a class="text-white hover:text-brand-neon transition" href="tel:+19495705004">(949) 570-5004</a><br/><br/>
             <a class="text-white hover:text-brand-neon transition block w-full" href="mailto:dennis.korol@outdooit.com" style="overflow-wrap: anywhere; word-break: break-word;">dennis.korol@outdooit.com</a>
@@ -828,7 +833,7 @@
       </div>
     </div>
 
-    <div class="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 uppercase font-black">
+    <div class="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 uppercase font-black">
       <p>© <span id="footer-year"></span> OUTDOOIT LOCAL SEO. ALL RIGHTS RESERVED.</p>
       <div class="flex space-x-6 mt-4 md:mt-0">
         <a class="hover:text-brand-neon transition" href="privacy-policy.html">Privacy Policy</a>
@@ -908,22 +913,22 @@
         </h3>
         <form class="space-y-4 audit-form-in-modal">
           <div>
-            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-1.5 ml-1">Full Name</label>
+            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-1.5 ml-1">Full Name</label>
             <input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-neon transition placeholder:text-gray-600" placeholder="John Doe" type="text" name="name"/>
           </div>
           <div>
-            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-1.5 ml-1">Website URL</label>
+            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-1.5 ml-1">Website URL</label>
             <input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-neon transition placeholder:text-gray-600" placeholder="www.yourbusiness.com" type="url" name="website"/>
           </div>
           <div>
-            <label class="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-1.5 ml-1">Business Email</label>
+            <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-1.5 ml-1">Business Email</label>
             <input class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-neon transition placeholder:text-gray-600" placeholder="john@company.com" type="email" name="email"/>
           </div>
           <button class="w-full bg-brand-neon text-black font-black uppercase italic py-4 rounded-xl mt-4 hover:bg-white transition-all transform hover:scale-[1.02] shadow-[0_10px_30px_-10px_rgba(204,255,0,0.3)]" type="submit">
             Get My Free Audit
           </button>
         </form>
-        <p class="text-center text-gray-500 text-[10px] uppercase font-bold tracking-widest mt-6">
+        <p class="text-center text-gray-400 text-[10px] uppercase font-bold tracking-widest mt-6">
           We review your GBP + website and send the top 3 opportunities.
         </p>
       </div>
